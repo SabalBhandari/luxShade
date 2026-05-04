@@ -32,16 +32,16 @@ public class LoginServlet extends HttpServlet {
 
             session.setMaxInactiveInterval(30 * 60);
 
-            response.sendRedirect(request.getContextPath() + "/pages/landing.jsp");
+            response.sendRedirect(request.getContextPath() + "/pages/user/landing.jsp");
         } else {
             request.setAttribute("error", "Invalid email or password!");
-            request.getRequestDispatcher("/pages/login.jsp").forward(request, response);
+            request.getRequestDispatcher("/pages/user/login.jsp").forward(request, response);
         }
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/pages/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/pages/user/login.jsp").forward(request, response);
     }
 }

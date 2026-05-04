@@ -4,9 +4,9 @@
 <head>
     <title>About Us</title>
 
-    <link rel="stylesheet" href="css/About_us.css" />
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/About_us.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
 <!-- ========== NAVBAR ========== -->

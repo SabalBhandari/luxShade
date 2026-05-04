@@ -23,10 +23,10 @@
         </div>
 
         <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/landing.jsp">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/aboutUs.jsp">Collection</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/collections.jsp">About</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/contact.jsp">Contact</a></li>
         </ul>
 
         <div class="nav-right">

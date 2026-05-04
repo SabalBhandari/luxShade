@@ -49,7 +49,7 @@
             <% } %>
 
             <div class="signup-link">
-                Don't have an account? <a href="${pageContext.request.contextPath}/register.jsp">Sign Up</a>
+                Don't have an account? <a href="${pageContext.request.contextPath}/pages/register.jsp">Sign Up</a>
             </div>
         </div>
     </div>

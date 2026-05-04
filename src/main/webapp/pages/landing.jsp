@@ -334,7 +334,7 @@
                 <span>Gentle Monster</span>
             </div>
             <div class="brand-card">
-                <img src="./images/brands/versace.png.png" alt="Versace">
+                <img src="./images/brands/versace.png" alt="Versace">
                 <span>Versace</span>
             </div>
         </div>

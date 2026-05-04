@@ -16,11 +16,11 @@
     <h2 class="footer-logo">LuxShade</h2>
     <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <div class="footer-socials">
-      <a href="#"><img src="./images/socials/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="./images/socials/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/socials/insta.png" alt="Instagram"></a>
+      <a href="#"><img src="./images/socials/fb.png" alt="Facebook"></a>
     </div>
     <a href="#" class="back-to-top">
-      <img src="./images/socials/arrow.png" alt=""> Back to top
+      <img src="./images/icons/uparrow.png" alt=""> Back to top
     </a>
   </div>
 

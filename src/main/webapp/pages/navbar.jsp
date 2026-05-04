@@ -9,27 +9,42 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
-<nav class = "navbar">
+<nav>
     <div class="container">
         <h1 class="logo"><a href="#">LuxShade</a></h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
         <div class="nav-right">
             <div class="icons">
-                <img src="./images/search.png" alt="search">
-                <img src="./images/profile.png" alt="profile">
-                <img src="./images/cart.png" alt="cart">
+                <img src="./images/icons/search.png" alt="search">
+                <img src="./images/icons/user.png" alt="profile">
+                <img src="./images/icons/cart.png" alt="cart">
             </div>
         </div>
     </div>
 </nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 </body>
 </html>

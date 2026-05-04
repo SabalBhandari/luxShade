@@ -22,7 +22,13 @@
     <!-- Hero section -->
     <section class="hero">
         <div class="container">
-            <div class="left-content"></div>
+            <div class="left-side">
+                <div class="left-content">
+                    <h1>DESIGNED TO STAND OUT</h1>
+                    <p>Experience the perfect blend of fashion and function with sunglasses built to <br>deliver
+                        lasting comfort, sharp clarity, and timeless appeal.</p>
+                </div>
+            </div>
             <img src="#" alt="">
         </div>
     </section>
@@ -44,7 +50,7 @@
             <div class="learn-more btn">
                 <a href="#">
                     <span>Learn More </span>
-                    <img src="./images/btn-1.png" alt="" srcset="">
+                    <img src="./images/icons/btn-1.png" alt="" srcset="">
                 </a>
             </div>
         </div>
@@ -58,7 +64,7 @@
             <div class="see-more btn">
                 <a href="#">
                     <span>See More </span>
-                    <img src="./images/btn-2.png" alt="" srcset="">
+                    <img src="./images/icons/btn-2.png" alt="" srcset="">
                 </a>
             </div>
         </div>
@@ -108,33 +114,234 @@
             </ul>
         </div>
     </section>
+
     <!-- Ad section -->
+
     <section class="ad">
         <div class="ad-left">
             <img src="./images/ad-image.png" alt="">
         </div>
         <div class="ad-right">
-            <h2>Message</h2>
-            <p>desc</p>
-            <div class="explore-btn btn">
-                <a href="#">Explore <span><!-- shape--></span></a>
+            <div class="ad-right-container">
+
+                <h2>YOUR EYES <br> <span>DESERVE</span> <br> THE BEST</h2>
+                <p>Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem
+                    placerat in id.</p>
+                <div class="explore-btn btn">
+                    <a href="#">Explore <img src="./images/icons/btn-2.png" alt="" srcset=""></a>
+                </div>
             </div>
         </div>
     </section>
     <!-- Collection section -->
     <section class="collection">
-        <h1>Collections</h1>
         <div class="collection-left">
+            <h1>Collections</h1>
             <div class="card">
-                <img src="" alt="">
-                <p>Desc</p>
+                <img src="./images/Collections/image 1.png" alt="">
+                <div class="description">
+                    Name | color <br>
+                    Price <br>
+                    Rating
+                </div>
+                </p>
             </div>
         </div>
         <div class="collection-right">
+            <div class="grid-container">
+                <div class="card-1 cards">
+                    <img src="./images/Collections/image 2.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+                <div class="card-2 cards">
+                    <img src="./images/Collections/image 3.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+                <div class="card-3 cards">
+                    <img src="./images/Collections/image 4.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+                <div class="card-4 cards">
+                    <img src="./images/Collections/image 5.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+                <div class="card-5 cards">
+                    <img src="./images/Collections/image 6.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+                <div class="card-6 cards">
+                    <img src="./images/Collections/image 7.png" alt="" srcset="">
+                    <div class="description">
+                        Name | color <br>
+                        Price <br>
+                        Rating
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Experience section -->
+
+    <section class="experience-section">
+
+        <!-- Top: Unrivalled Experience -->
+        <h2 class="section-title">Unrivalled Experience</h2>
+
+        <!-- Top Cards Row -->
+        <div class="experience-cards">
+
+            <!-- Left Card -->
+            <div class="exp-card exp-card-left">
+                <div class="exp-card-text">
+                    <h3>Need an Eye Exam?</h3>
+                    <p>Schedule your in-person eye exam at LuxShade with advanced technology for better experience
+                    </p>
+                    <a href="#" class="schedule-btn">Schedule now</a>
+                </div>
+                <div class="exp-card-img">
+                    <img src="./images/experience/image 1.png" alt="Eye Exam">
+                </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="exp-card exp-card-right">
+                <img src="./images/experience/image 2.png" alt="Shop">
+                <div class="exp-card-overlay">
+                    <h3>Shop Online, <br> Thrive In-store!</h3>
+                </div>
+            </div>
 
         </div>
+
+        <!-- Bottom: Product Section -->
+        <div class="product-section">
+
+            <!-- Tabs -->
+            <hr class="tab-line">
+            <div class="product-tabs">
+                <span>P o l a r i z e d</span>
+                <span>|</span>
+                <span>U V &nbsp; P r o t e c t i o n</span>
+                <span>|</span>
+                <span>M i r r o r e d</span>
+                <span>|</span>
+                <span>P h o t o c h r o m i c</span>
+            </div>
+            <hr class="tab-line">
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="./images/experience/image 3.png" alt="Product 1">
+                    <p class="product-name">Name | Color</p>
+                    <p class="product-price">Price</p>
+                    <p class="product-rating">Rating</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/experience/image 4.png" alt="Product 2">
+                    <p class="product-name">Name | Color</p>
+                    <p class="product-price">Price</p>
+                    <p class="product-rating">Rating</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/experience/image 5.png" alt="Product 3">
+                    <p class="product-name">Name | Color</p>
+                    <p class="product-price">Price</p>
+                    <p class="product-rating">Rating</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/experience/image 6.png" alt="Product 4">
+                    <p class="product-name">Name | Color</p>
+                    <p class="product-price">Price</p>
+                    <p class="product-rating">Rating</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- discount section -->
+    <section class="discount-section">
+
+        <!-- Special Discount Banner -->
+        <div class="discount-banner">
+            <h2 class="discount-title">Special Discount</h2>
+            <img src="./images/Discount/clock.png" alt="" srcset="">
+        </div>
+
+        <!-- Shades Approved Heading -->
+        <h2 class="shades-title">Shades Approved by <br> Thousands</h2>
+
+        <!-- Cards Row -->
+        <div class="shades-cards">
+            <div class="shade-text-card">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <div class="shade-img-card">
+                <img src="./images/Discount/image 1.png" alt="Model 1">
+            </div>
+            <div class="shade-text-card">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+            <div class="shade-img-card">
+                <img src="./images/Discount/image 2.png" alt="Model 2">
+            </div>
+        </div>
+
+        <!-- Shop by Brands -->
+        <h3 class="brands-title">Shop by Brands</h3>
+        <div class="brands-grid">
+            <div class="brand-card">
+                <img src="./images/brands/chanel.png" alt="Chanel">
+                <span>Chanel</span>
+            </div>
+            <div class="brand-card">
+                <img src="./images/brands/celine.png" alt="Celine">
+                <span>Celine</span>
+            </div>
+            <div class="brand-card">
+                <img src="./images/brands/gentle_monster.png" alt="Gentle Monster">
+                <span>Gentle Monster</span>
+            </div>
+            <div class="brand-card">
+                <img src="./images/brands/versace.png" alt="Versace">
+                <span>Versace</span>
+            </div>
+        </div>
+
     </section>
 
 </main>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

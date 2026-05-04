@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="css/login_registration.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/login_registration.css">
 </head>
 <body>
 <div class="container">
@@ -24,36 +24,33 @@
     <div class="right">
         <div class="form-box">
             <h2>Login</h2>
-            <form>
-                <!-- <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your full name" required>
-                </div> -->
+            <form action="${pageContext.request.contextPath}/login" method="post">
 
                 <div class="input-group">
                     <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
                 </div>
-
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password" placeholder="Create a password" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
                 </div>
 
-                <!-- <div class="input-group">
-                    <label>Confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" required>
-                </div> -->
                 <div class="forgot-link">
                     <a href="#">Forgot Password?</a>
                 </div>
 
                 <button type="submit" class="register-btn">Login</button>
-            </form>
-            <div class="signup-link">
-                Don't have an account?<a href="#">Sign Up</a>
-            </div>
 
+            </form>
+
+            <!-- Error message -->
+            <% if (request.getAttribute("error") != null) { %>
+            <p style="color: red;"><%= request.getAttribute("error") %></p>
+            <% } %>
+
+            <div class="signup-link">
+                Don't have an account? <a href="${pageContext.request.contextPath}/pages/register.jsp">Sign Up</a>
+            </div>
         </div>
     </div>
 </div>

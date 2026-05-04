@@ -64,7 +64,8 @@ public class UserDAO {
 
             stmt.setString(1, email);
             ResultSet rs = stmt.executeQuery();
-            return rs.next();
+            boolean exists = rs.next();
+            return exists;
 
         } catch (SQLException e) {
             e.printStackTrace();

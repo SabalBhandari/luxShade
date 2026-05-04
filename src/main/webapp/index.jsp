@@ -15,7 +15,7 @@
     <li><a href="pages/aboutUs.jsp">about Page</a></li>
     <li><a href="pages/collections.jsp">collections Page</a></li>
     <li><a href="pages/contact.jsp">contact Page</a></li>
-    <li><a href="pages/AdminDashBoard.jsp">Admin Dashboard</a></li>
+    <li><a href="pages/Admin/DashBoard.jsp">Admin Dashboard</a></li>
 </ul>
 </body>
 </html>

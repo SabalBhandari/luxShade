@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>DashBoard</title>
-  <link rel="stylesheet" href="css/admindashboard.css" />
+  <link rel="stylesheet" href="../css/admindashboard.css" />
 </head>
 <body>
 <!-- ========== SIDEBAR ========== -->

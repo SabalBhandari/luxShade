@@ -5,81 +5,20 @@
     z-index: 1000;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 60px;
 }
 
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--gold);
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-.navbar-brand span {
-    color: #fff;
-}
-
-.navbar-links {
-    display: flex;
-    gap: 36px;
-    list-style: none;
-}
-
-.navbar-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: color 0.3s;
-    position: relative;
-}
-
-.navbar-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--gold);
-    transition: width 0.3s;
-}
-
-.navbar-links a:hover {
-    color: var(--gold);
-}
-.navbar-links a:hover::after {
-    width: 100%;
-}
-
-.navbar-icons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.navbar-icons a {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.navbar-icons a:hover { color: var(--gold); }
-
 /* ===== HERO / ABOUT US SECTION ===== */
 .hero-section {
-    background: var(--black);
-    padding: 80px 60px 100px;
+    background: black;
+    padding: 80px 60px 80px;
     position: relative;
     overflow: hidden;
+    height: 450px;
 }
 
 .hero-section::before {
@@ -88,7 +27,7 @@
     top: -100px;
     right: -100px;
     width: 400px;
-    height: 400px;
+    height: 500px;
     background: radial-gradient(circle, rgba(212,168,67,0.08) 0%, transparent 70%);
     pointer-events: none;
 }
@@ -110,12 +49,12 @@
     letter-spacing: -2px;
     color: #fff;
     align-self: start;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .hero-main-img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     border-radius: 4px;
     display: block;
@@ -131,15 +70,15 @@
 }
 
 .philosophy-card {
-    background: var(--dark-card);
-    border: 1px solid var(--border);
+    background: transparent;
+    border: 1px solid black;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .philosophy-card img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     object-fit: cover;
     display: block;
 }
@@ -158,14 +97,15 @@
 
 .philosophy-card-body p {
     font-size: 0.78rem;
-    color: var(--text-muted);
+    color: #fff;
     line-height: 1.6;
 }
 
 /* ===== VISION & MISSION (Scroll Section) ===== */
 .vm-section {
-    background: var(--off-white);
-    padding: 100px 60px;
+    background: #FFF6F1;
+    padding: 80px 60px;
+    height: 450px;
 }
 
 .vm-container {
@@ -220,7 +160,7 @@
     transform: translateX(-50%);
     width: 10px;
     height: 10px;
-    background: var(--black);
+    background: black;
     border-radius: 1px;
     animation: scrollThumb 3s ease-in-out infinite;
 }
@@ -250,7 +190,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--black);
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -262,8 +202,9 @@
 
 /* ===== MEET THE TEAM ===== */
 .team-section {
-    background: var(--black);
-    padding: 100px 60px;
+    background: #000000;
+    padding: 80px 60px;
+    height: 500px;
 }
 
 .section-title {
@@ -327,8 +268,8 @@
 }
 
 .flip-back {
-    background: linear-gradient(135deg, var(--dark-card) 0%, #2a2010 100%);
-    border: 1px solid var(--border);
+    background: linear-gradient(135deg,#FFF6F1 0%, #2a2010 100%);
+    border: 1px solid dimgrey;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -342,7 +283,7 @@
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    border: 2px solid var(--gold);
+    border: 2px solid #daa520;
     object-fit: cover;
     margin-bottom: 16px;
 }
@@ -356,7 +297,7 @@
 
 .flip-back .member-role {
     font-size: 0.78rem;
-    color: var(--gold);
+    color: goldenrod;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 14px;
@@ -364,7 +305,7 @@
 
 .flip-back p {
     font-size: 0.82rem;
-    color: var(--text-muted);
+    color:#fff;
     line-height: 1.65;
 }
 
@@ -384,13 +325,14 @@
 
 /* ===== FAQ SECTION ===== */
 .faq-section {
-    background: var(--off-white);
-    padding: 100px 60px;
+    background: #FFF6F1;
+    padding: 80px 60px;
+    height: 400px;
 }
 
 .faq-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 500px 1fr;
     gap: 80px;
     align-items: start;
     max-width: 1100px;
@@ -401,26 +343,26 @@
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--black);
+    color: black;
     line-height: 1.2;
     margin-bottom: 24px;
 }
 
 .faq-left h2 .highlight {
-    color: var(--gold);
+    color: goldenrod;
 }
 
 .faq-label {
     font-size: 0.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gold);
+    color: goldenrod;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .faq-img {
-    width: 200px;
+    width: 400px;
     margin-top: 20px;
 }
 
@@ -448,7 +390,7 @@
 .faq-question {
     padding: 18px 28px;
     font-size: 0.92rem;
-    color: var(--black);
+    color: black;
     font-weight: 500;
     cursor: default;
     display: flex;
@@ -458,7 +400,7 @@
 
 .faq-question .faq-icon {
     font-size: 1rem;
-    color: var(--gold);
+    color: goldenrod;
     transition: transform 0.3s;
     opacity: 0;
 }
@@ -485,17 +427,17 @@
 
 /* ===== STATS SECTION ===== */
 .stats-section {
-    background: var(--black);
+    background: black;
     padding: 60px;
 }
 
 .stats-card {
-    background: var(--dark-card);
-    border: 1px solid var(--border);
+    background: transparent;
+    border: 1px solid gray;
     border-radius: 8px;
     max-width: 900px;
     margin: 0 auto;
-    padding: 50px 60px;
+    padding: 40px 60px;
     text-align: center;
 }
 
@@ -504,6 +446,7 @@
     font-size: 1.5rem;
     color: #fff;
     margin-bottom: 40px;
+    margin-top: 0px;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -532,7 +475,7 @@
 
 .stat-label {
     font-size: 0.82rem;
-    color: var(--text-muted);
+    color: #fff;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }

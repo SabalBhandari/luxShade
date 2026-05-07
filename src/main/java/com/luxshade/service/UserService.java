@@ -9,7 +9,6 @@ public class UserService {
     private final UserDAO userDAO = new UserDAO();
 
     public boolean registerUser(String name, String email, String password, String profilePic) {
-
         if (userDAO.emailExists(email)) {
             return false;
         }

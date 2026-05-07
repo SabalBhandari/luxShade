@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
 <nav>
@@ -23,17 +23,17 @@
         </div>
 
         <ul class="nav-links" id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/landing.jsp">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/aboutUs.jsp">Collection</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/collections.jsp">About</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/contact.jsp">Contact</a></li>
         </ul>
 
         <div class="nav-right">
             <div class="icons">
-                <img src="./images/icons/search.png" alt="search">
-                <img src="./images/icons/user.png" alt="profile">
-                <img src="./images/icons/cart.png" alt="cart">
+                <img src="../images/icons/search.png" alt="search">
+                <img src="../images/icons/user.png" alt="profile">
+                <img src="../images/icons/cart.png" alt="cart">
             </div>
         </div>
     </div>

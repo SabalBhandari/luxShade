@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/landing.css">
 </head>
 <body>
 <!-- logo + nav -->
@@ -50,7 +50,7 @@
             <div class="learn-more btn">
                 <a href="#">
                     <span>Learn More </span>
-                    <img src="./images/icons/btn-1.png" alt="" srcset="">
+                    <img src="../images/icons/btn-1.png" alt="" srcset="">
                 </a>
             </div>
         </div>
@@ -64,7 +64,7 @@
             <div class="see-more btn">
                 <a href="#">
                     <span>See More </span>
-                    <img src="./images/icons/btn-2.png" alt="" srcset="">
+                    <img src="../images/icons/btn-2.png" alt="" srcset="">
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <ul>
                 <li class="card-1">
                     <a href="#">
-                        <img src="./images/Glasses/image 1.png" alt="" class="image">
+                        <img src="../images/Glasses/image%201.png" alt="" class="image">
                         <div class="description">
                             Name | color <br>
                             Price <br>
@@ -83,7 +83,7 @@
                 </li>
                 <li class="card-2">
                     <a href="#">
-                        <img src="./images/Glasses/image 2.png" alt="" class="image">
+                        <img src="../images/Glasses/image%202.png" alt="" class="image">
                         <div class="description">
                             Name | color <br>
                             Price <br>
@@ -93,7 +93,7 @@
                 </li>
                 <li class="card-3">
                     <a href="#">
-                        <img src="./images/Glasses/image 3.png" alt="" class="image">
+                        <img src="../images/Glasses/image%203.png" alt="" class="image">
                         <div class="description">
                             Name | color <br>
                             Price <br>
@@ -103,7 +103,7 @@
                 </li>
                 <li class="card-4">
                     <a href="#">
-                        <img src="./images/Glasses/image 4.png" alt="" class="image">
+                        <img src="../images/Glasses/image%204.png" alt="" class="image">
                         <div class="description">
                             Name | color <br>
                             Price <br>
@@ -119,7 +119,7 @@
 
     <section class="ad">
         <div class="ad-left">
-            <img src="./images/ad-image.png" alt="">
+            <img src="../images/ad-image.png" alt="">
         </div>
         <div class="ad-right">
             <div class="ad-right-container">
@@ -128,7 +128,7 @@
                 <p>Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem
                     placerat in id.</p>
                 <div class="explore-btn btn">
-                    <a href="#">Explore <img src="./images/icons/btn-2.png" alt="" srcset=""></a>
+                    <a href="#">Explore <img src="../images/icons/btn-2.png" alt="" srcset=""></a>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
         <div class="collection-left">
             <h1>Collections</h1>
             <div class="card">
-                <img src="./images/Collections/image 1.png" alt="">
+                <img src="../images/Collections/image%201.png" alt="">
                 <div class="description">
                     Name | color <br>
                     Price <br>
@@ -150,7 +150,7 @@
         <div class="collection-right">
             <div class="grid-container">
                 <div class="card-1 cards">
-                    <img src="./images/Collections/image 2.png" alt="" srcset="">
+                    <img src="../images/Collections/image%202.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="card-2 cards">
-                    <img src="./images/Collections/image 3.png" alt="" srcset="">
+                    <img src="../images/Collections/image%203.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="card-3 cards">
-                    <img src="./images/Collections/image 4.png" alt="" srcset="">
+                    <img src="../images/Collections/image%204.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
                 <div class="card-4 cards">
-                    <img src="./images/Collections/image 5.png" alt="" srcset="">
+                    <img src="../images/Collections/image%205.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
                 <div class="card-5 cards">
-                    <img src="./images/Collections/image 6.png" alt="" srcset="">
+                    <img src="../images/Collections/image%206.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 <div class="card-6 cards">
-                    <img src="./images/Collections/image 7.png" alt="" srcset="">
+                    <img src="../images/Collections/image%207.png" alt="" srcset="">
                     <div class="description">
                         Name | color <br>
                         Price <br>
@@ -221,13 +221,13 @@
                     <a href="#" class="schedule-btn">Schedule now</a>
                 </div>
                 <div class="exp-card-img">
-                    <img src="./images/experience/image 1.png" alt="Eye Exam">
+                    <img src="../images/experience/image%201.png" alt="Eye Exam">
                 </div>
             </div>
 
             <!-- Right Card -->
             <div class="exp-card exp-card-right">
-                <img src="./images/experience/image 2.png" alt="Shop">
+                <img src="../images/experience/image%202.png" alt="Shop">
                 <div class="exp-card-overlay">
                     <h3>Shop Online, <br> Thrive In-store!</h3>
                 </div>
@@ -255,28 +255,28 @@
             <div class="product-grid">
 
                 <div class="product-card">
-                    <img src="./images/experience/image 3.png" alt="Product 1">
+                    <img src="../images/experience/image%203.png" alt="Product 1">
                     <p class="product-name">Name | Color</p>
                     <p class="product-price">Price</p>
                     <p class="product-rating">Rating</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="./images/experience/image 4.png" alt="Product 2">
+                    <img src="../images/experience/image%204.png" alt="Product 2">
                     <p class="product-name">Name | Color</p>
                     <p class="product-price">Price</p>
                     <p class="product-rating">Rating</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="./images/experience/image 5.png" alt="Product 3">
+                    <img src="../images/experience/image%205.png" alt="Product 3">
                     <p class="product-name">Name | Color</p>
                     <p class="product-price">Price</p>
                     <p class="product-rating">Rating</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="./images/experience/image 6.png" alt="Product 4">
+                    <img src="../images/experience/image%206.png" alt="Product 4">
                     <p class="product-name">Name | Color</p>
                     <p class="product-price">Price</p>
                     <p class="product-rating">Rating</p>
@@ -294,7 +294,7 @@
         <!-- Special Discount Banner -->
         <div class="discount-banner">
             <h2 class="discount-title">Special Discount</h2>
-            <img src="./images/Discount/clock.png" alt="" srcset="">
+            <img src="../images/Discount/clock.png" alt="" srcset="">
         </div>
 
         <!-- Shades Approved Heading -->
@@ -307,14 +307,14 @@
                     pariatur.</p>
             </div>
             <div class="shade-img-card">
-                <img src="./images/Discount/image 1.png" alt="Model 1">
+                <img src="../images/Discount/image%201.png" alt="Model 1">
             </div>
             <div class="shade-text-card">
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur.</p>
             </div>
             <div class="shade-img-card">
-                <img src="./images/Discount/image 2.png" alt="Model 2">
+                <img src="../images/Discount/image%202.png" alt="Model 2">
             </div>
         </div>
 
@@ -322,19 +322,19 @@
         <h3 class="brands-title">Shop by Brands</h3>
         <div class="brands-grid">
             <div class="brand-card">
-                <img src="./images/brands/chanel.png" alt="Chanel">
+                <img src="../images/brands/chanel.png" alt="Chanel">
                 <span>Chanel</span>
             </div>
             <div class="brand-card">
-                <img src="./images/brands/celine.png" alt="Celine">
+                <img src="../images/brands/celine.png" alt="Celine">
                 <span>Celine</span>
             </div>
             <div class="brand-card">
-                <img src="./images/brands/gentle_monster.png" alt="Gentle Monster">
+                <img src="../images/brands/gentle_monster.png" alt="Gentle Monster">
                 <span>Gentle Monster</span>
             </div>
             <div class="brand-card">
-                <img src="./images/brands/versace.png" alt="Versace">
+                <img src="../images/brands/versace.png" alt="Versace">
                 <span>Versace</span>
             </div>
         </div>

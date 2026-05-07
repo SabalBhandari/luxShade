@@ -30,7 +30,7 @@
 
                 <div class="input-group" style="text-align: center;">
                     <div class="profile-pic-container">
-                        <img id="preview" src="./images/default-profile-avatar.webp" alt="Profile Picture"
+                        <img id="preview" src="../images/default-profile-avatar.webp" alt="Profile Picture"
                              style="width: 100px;
                      height: 100px;
                      border-radius: 50%;
@@ -70,7 +70,7 @@
             <% } %>
 
             <div class="login-link">
-                Already have an account? <a href="${pageContext.request.contextPath}/pages/login.jsp">Login</a>
+                Already have an account? <a href="${pageContext.request.contextPath}/pages/user/login.jspn.jsp">Login</a>
 
             </div>
         </div>

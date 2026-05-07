@@ -24,8 +24,8 @@
 
         <ul class="nav-links" id="nav-links">
             <li><a href="${pageContext.request.contextPath}/pages/user/landing.jsp">Home</a></li>
-            <li><a href="${pageContext.request.contextPath}/pages/user/aboutUs.jsp">Collection</a></li>
-            <li><a href="${pageContext.request.contextPath}/pages/user/collections.jsp">About</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/collections.jsp">Collection</a></li>
+            <li><a href="${pageContext.request.contextPath}/pages/user/aboutUs.jsp">About</a></li>
             <li><a href="${pageContext.request.contextPath}/pages/user/contact.jsp">Contact</a></li>
         </ul>
 

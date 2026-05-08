@@ -29,7 +29,7 @@ public class RegisterServlet extends HttpServlet {
         // Check passwords match
         if (!password.equals(confirmPassword)) {
             request.setAttribute("error", "Passwords do not match!");
-            request.getRequestDispatcher("/pages/register.jsp").forward(request, response);
+            request.getRequestDispatcher("/pages/user/register.jsp").forward(request, response);
             return;
         }
 
@@ -54,16 +54,16 @@ public class RegisterServlet extends HttpServlet {
         boolean success = userService.registerUser(name, email, password, profilePicPath);
 
         if (success) {
-            response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
+            response.sendRedirect(request.getContextPath() + "/pages/user/login.jsp");
         } else {
             request.setAttribute("error", "Email already registered!");
-            request.getRequestDispatcher("/pages/register.jsp").forward(request, response);
+            request.getRequestDispatcher("/pages/user/register.jsp").forward(request, response);
         }
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/pages/register.jsp").forward(request, response);
+        request.getRequestDispatcher("/pages/user/register.jsp").forward(request, response);
     }
 }

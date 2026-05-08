@@ -37,7 +37,7 @@ public class AuthFilter implements Filter {
             // redirect them to landing page
             if (isLoggedIn && (requestURI.endsWith("login.jsp") ||
                     requestURI.endsWith("register.jsp"))) {
-                httpResponse.sendRedirect(httpRequest.getContextPath() + "/pages/index.jsp");
+                httpResponse.sendRedirect(httpRequest.getContextPath() + "/pages/user/landing.jsp");
                 return;
             }
             chain.doFilter(request, response);
@@ -48,7 +48,7 @@ public class AuthFilter implements Filter {
 
         } else {
             // User is NOT logged in, redirect to login
-            httpResponse.sendRedirect(httpRequest.getContextPath() + "/pages/login.jsp");
+            httpResponse.sendRedirect(httpRequest.getContextPath() + "/pages/user/login.jsp");
         }
     }
 

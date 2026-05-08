@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<h1> This is collections page</h1>
+<!-- ========== NAVBAR ========== -->
+<%@ include file="navbar.jsp"%>
+
+<!-- ========== FOOTER ========== -->
+<%@ include file="footer.jsp"%>
 </body>
 </html>

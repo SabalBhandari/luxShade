@@ -14,6 +14,8 @@
 <!-- ========== NAVBAR ========== -->
 <%@ include file="navbar.jsp"%>
 
+
+
 <!-- ========== FOOTER ========== -->
 <%@ include file="footer.jsp"%>
 </body>

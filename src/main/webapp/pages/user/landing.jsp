@@ -2,112 +2,106 @@
   Created by IntelliJ IDEA.
   User: sabal
   Date: 4/11/26
-  Time: 7:05 PM
+  Time: 7:05 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxShade - Premium Sunglasses</title>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/landing.css">
 </head>
 <body>
-<!-- logo + nav -->
+<!-- Navigation Header -->
 <header>
     <%@ include file="navbar.jsp" %>
 </header>
-<!-- Main content -->
+
+<!-- Main Content -->
 <main>
-    <!-- Hero section -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero section featuring main sunglasses collection">
         <div class="container">
             <div class="left-side">
                 <div class="left-content">
-                    <h1>DESIGNED TO STAND OUT</h1>
-                    <p>Experience the perfect blend of fashion and function with sunglasses built to <br>deliver
-                        lasting comfort, sharp clarity, and timeless appeal.</p>
+                    <h1>Designed to Stand Out</h1>
+                    <p>Experience the perfect blend of fashion and function with sunglasses built to deliver lasting comfort, sharp clarity, and timeless appeal.</p>
                 </div>
             </div>
-            <img src="#" alt="">
+            <img src="../images/bannerCropped.png" alt="Featured sunglasses collection">
+
         </div>
     </section>
 
-
-    <!-- panel 2 -->
-    <section class="panel-2">
+    <!-- Panel 2 - Key Message Section -->
+    <section class="panel-2" aria-label="Premium quality promise">
         <div class="pnl2-left">
-            <h2>
-                Lorem ipsum dolor <br>
-                sit amet <br>
-                consectetur
-                adipiscing elit.
-            </h2>
+            <h2>Quality Craftsmanship Meets Modern Design</h2>
         </div>
         <div class="pnl2-right">
-            <p>Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem
-                placerat in id.</p>
+            <p>Our sunglasses are meticulously crafted with premium materials and cutting-edge technology to ensure you get the best protection and style.</p>
             <div class="learn-more btn">
-                <a href="#">
-                    <span>Learn More </span>
-                    <img src="../images/icons/btn-1.png" alt="" srcset="">
+                <a href="#collections" title="Learn more about our collections">
+                    <span>Learn More</span>
+                    <img src="../images/icons/btn-1.png" alt="">
                 </a>
             </div>
         </div>
     </section>
 
-
-    <!-- new arrival section -->
-    <section class="new-arrivals">
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals" aria-label="New arrivals collection">
         <div class="top">
             <h2>New Arrivals</h2>
             <div class="see-more btn">
-                <a href="#">
-                    <span>See More </span>
-                    <img src="../images/icons/btn-2.png" alt="" srcset="">
+                <a href="#all-products" title="View all new arrivals">
+                    <span>See More</span>
+                    <img src="../images/icons/btn-2.png" alt="">
                 </a>
             </div>
         </div>
         <div class="product-cards">
             <ul>
                 <li class="card-1">
-                    <a href="#">
-                        <img src="../images/Glasses/image%201.png" alt="" class="image">
+                    <a href="#" title="View product details">
+                        <img src="../images/Glasses/image%201.png" alt="Aviator Classic - Black" class="image">
                         <div class="description">
-                            Name | color <br>
-                            Price <br>
-                            Rating <br>
-
+                            <span class="product-name">Aviator Classic | Black</span>
+                            <span class="product-price">$189.99</span>
+                            <span class="product-rating">★★★★★ (245 reviews)</span>
                         </div>
                     </a>
                 </li>
                 <li class="card-2">
-                    <a href="#">
-                        <img src="../images/Glasses/image%202.png" alt="" class="image">
+                    <a href="#" title="View product details">
+                        <img src="../images/Glasses/image%202.png" alt="Wayfarer Pro - Brown" class="image">
                         <div class="description">
-                            Name | color <br>
-                            Price <br>
-                            Rating <br>
+                            <span class="product-name">Wayfarer Pro | Brown</span>
+                            <span class="product-price">$175.99</span>
+                            <span class="product-rating">★★★★★ (189 reviews)</span>
                         </div>
                     </a>
                 </li>
                 <li class="card-3">
-                    <a href="#">
-                        <img src="../images/Glasses/image%203.png" alt="" class="image">
+                    <a href="#" title="View product details">
+                        <img src="../images/Glasses/image%203.png" alt="Cat Eye Chic - Rose Gold" class="image">
                         <div class="description">
-                            Name | color <br>
-                            Price <br>
-                            Rating <br>
+                            <span class="product-name">Cat Eye Chic | Rose Gold</span>
+                            <span class="product-price">$199.99</span>
+                            <span class="product-rating">★★★★★ (312 reviews)</span>
                         </div>
                     </a>
                 </li>
                 <li class="card-4">
-                    <a href="#">
-                        <img src="../images/Glasses/image%204.png" alt="" class="image">
+                    <a href="#" title="View product details">
+                        <img src="../images/Glasses/image%204.png" alt="Oversized Luxury - Tortoise" class="image">
                         <div class="description">
-                            Name | color <br>
-                            Price <br>
-                            Rating <br>
+                            <span class="product-name">Oversized Luxury | Tortoise</span>
+                            <span class="product-price">$219.99</span>
+                            <span class="product-rating">★★★★★ (267 reviews)</span>
                         </div>
                     </a>
                 </li>
@@ -115,206 +109,182 @@
         </div>
     </section>
 
-    <!-- Ad section -->
-
-    <section class="ad">
+    <!-- Advertisement Section -->
+    <section class="ad" aria-label="Premium quality advertisement">
         <div class="ad-left">
-            <img src="../images/ad-image.png" alt="">
+            <img src="../images/ad-imageCropped.png" alt="Premium sunglasses lifestyle photography">
         </div>
         <div class="ad-right">
             <div class="ad-right-container">
-
-                <h2>YOUR EYES <br> <span>DESERVE</span> <br> THE BEST</h2>
-                <p>Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem
-                    placerat in id.</p>
+                <h2>Your Eyes <br> <span>Deserve</span> <br> The Best</h2>
+                <p>Protect your vision with our UV protection technology while maintaining timeless elegance. Every pair is engineered for comfort and durability.</p>
                 <div class="explore-btn btn">
-                    <a href="#">Explore <img src="../images/icons/btn-2.png" alt="" srcset=""></a>
+                    <a href="#" title="Explore full collection">Explore <img src="../images/icons/btn-2.png" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Collection section -->
-    <section class="collection">
+
+    <!-- Collections Section -->
+    <section class="collection" id="collections" aria-label="Featured collections">
         <div class="collection-left">
             <h1>Collections</h1>
             <div class="card">
-                <img src="../images/Collections/image%201.png" alt="">
+                <img src="../images/Collections/image%201.png" alt="Classic Collection - Featured product">
                 <div class="description">
-                    Name | color <br>
-                    Price <br>
-                    Rating
+                    <span class="product-name">Classic Collection</span>
+                    <span class="product-price">From $149.99</span>
+                    <span class="product-rating">★★★★★</span>
                 </div>
-                </p>
             </div>
         </div>
         <div class="collection-right">
             <div class="grid-container">
                 <div class="card-1 cards">
-                    <img src="../images/Collections/image%202.png" alt="" srcset="">
+                    <img src="../images/Collections/image%202.png" alt="Summer Vibes Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Summer Vibes</span>
+                        <span class="product-price">$159.99</span>
+                        <span class="product-rating">★★★★☆</span>
                     </div>
                 </div>
                 <div class="card-2 cards">
-                    <img src="../images/Collections/image%203.png" alt="" srcset="">
+                    <img src="../images/Collections/image%203.png" alt="Urban Edge Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Urban Edge</span>
+                        <span class="product-price">$179.99</span>
+                        <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
                 <div class="card-3 cards">
-                    <img src="../images/Collections/image%204.png" alt="" srcset="">
+                    <img src="../images/Collections/image%204.png" alt="Retro Vibes Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Retro Vibes</span>
+                        <span class="product-price">$169.99</span>
+                        <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
                 <div class="card-4 cards">
-                    <img src="../images/Collections/image%205.png" alt="" srcset="">
+                    <img src="../images/Collections/image%205.png" alt="Sport Edition Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Sport Edition</span>
+                        <span class="product-price">$199.99</span>
+                        <span class="product-rating">★★★★☆</span>
                     </div>
                 </div>
                 <div class="card-5 cards">
-                    <img src="../images/Collections/image%206.png" alt="" srcset="">
+                    <img src="../images/Collections/image%206.png" alt="Luxury Premium Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Luxury Premium</span>
+                        <span class="product-price">$249.99</span>
+                        <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
                 <div class="card-6 cards">
-                    <img src="../images/Collections/image%207.png" alt="" srcset="">
+                    <img src="../images/Collections/image%207.png" alt="Designer Exclusive Collection">
                     <div class="description">
-                        Name | color <br>
-                        Price <br>
-                        Rating
+                        <span class="product-name">Designer Exclusive</span>
+                        <span class="product-price">$299.99</span>
+                        <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!-- Experience section -->
-
-    <section class="experience-section">
-
-        <!-- Top: Unrivalled Experience -->
+    <!-- Experience Section -->
+    <section class="experience-section" aria-label="Customer experience features">
         <h2 class="section-title">Unrivalled Experience</h2>
 
-        <!-- Top Cards Row -->
         <div class="experience-cards">
-
-            <!-- Left Card -->
+            <!-- Left Card: Eye Exam -->
             <div class="exp-card exp-card-left">
                 <div class="exp-card-text">
                     <h3>Need an Eye Exam?</h3>
-                    <p>Schedule your in-person eye exam at LuxShade with advanced technology for better experience
-                    </p>
-                    <a href="#" class="schedule-btn">Schedule now</a>
+                    <p>Schedule your in-person eye exam at LuxShade with advanced technology for better experience</p>
+                    <a href="#" class="schedule-btn" title="Schedule an eye exam appointment">Schedule now</a>
                 </div>
                 <div class="exp-card-img">
-                    <img src="../images/experience/image%201.png" alt="Eye Exam">
+                    <img src="../images/experience/image%201.png" alt="Professional eye exam setup">
                 </div>
             </div>
 
-            <!-- Right Card -->
+            <!-- Right Card: Shop Online -->
             <div class="exp-card exp-card-right">
-                <img src="../images/experience/image%202.png" alt="Shop">
+                <img src="../images/experience/image%202.png" alt="In-store shopping experience">
                 <div class="exp-card-overlay">
                     <h3>Shop Online, <br> Thrive In-store!</h3>
                 </div>
             </div>
-
         </div>
 
-        <!-- Bottom: Product Section -->
+        <!-- Product Section with Tabs -->
         <div class="product-section">
-
-            <!-- Tabs -->
             <hr class="tab-line">
-            <div class="product-tabs">
-                <span>P o l a r i z e d</span>
-                <span>|</span>
-                <span>U V &nbsp; P r o t e c t i o n</span>
-                <span>|</span>
-                <span>M i r r o r e d</span>
-                <span>|</span>
-                <span>P h o t o c h r o m i c</span>
+            <div class="product-tabs" role="tablist">
+                <span role="tab" aria-selected="true" tabindex="0">Polarized</span>
+                <span aria-hidden="true">|</span>
+                <span role="tab" aria-selected="false" tabindex="0">UV Protection</span>
+                <span aria-hidden="true">|</span>
+                <span role="tab" aria-selected="false" tabindex="0">Mirrored</span>
+                <span aria-hidden="true">|</span>
+                <span role="tab" aria-selected="false" tabindex="0">Photochromic</span>
             </div>
             <hr class="tab-line">
 
-            <!-- Product Grid -->
             <div class="product-grid">
-
                 <div class="product-card">
-                    <img src="../images/experience/image%203.png" alt="Product 1">
-                    <p class="product-name">Name | Color</p>
-                    <p class="product-price">Price</p>
-                    <p class="product-rating">Rating</p>
+                    <img src="../images/experience/image%203.png" alt="Polarized Aviator - Black">
+                    <p class="product-name">Polarized Aviator | Black</p>
+                    <p class="product-price">$189.99</p>
+                    <p class="product-rating">★★★★★ (145 reviews)</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="../images/experience/image%204.png" alt="Product 2">
-                    <p class="product-name">Name | Color</p>
-                    <p class="product-price">Price</p>
-                    <p class="product-rating">Rating</p>
+                    <img src="../images/experience/image%204.png" alt="UV Shield Classic - Brown">
+                    <p class="product-name">UV Shield Classic | Brown</p>
+                    <p class="product-price">$175.99</p>
+                    <p class="product-rating">★★★★★ (98 reviews)</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="../images/experience/image%205.png" alt="Product 3">
-                    <p class="product-name">Name | Color</p>
-                    <p class="product-price">Price</p>
-                    <p class="product-rating">Rating</p>
+                    <img src="../images/experience/image%205.png" alt="Mirrored Lens Pro - Gold">
+                    <p class="product-name">Mirrored Lens Pro | Gold</p>
+                    <p class="product-price">$209.99</p>
+                    <p class="product-rating">★★★★★ (167 reviews)</p>
                 </div>
 
                 <div class="product-card">
-                    <img src="../images/experience/image%206.png" alt="Product 4">
-                    <p class="product-name">Name | Color</p>
-                    <p class="product-price">Price</p>
-                    <p class="product-rating">Rating</p>
+                    <img src="../images/experience/image%206.png" alt="Photochromic Smart - Gray">
+                    <p class="product-name">Photochromic Smart | Gray</p>
+                    <p class="product-price">$229.99</p>
+                    <p class="product-rating">★★★★★ (203 reviews)</p>
                 </div>
-
             </div>
         </div>
-
     </section>
 
-
-    <!-- discount section -->
-    <section class="discount-section">
-
-        <!-- Special Discount Banner -->
+    <!-- Discount Section -->
+    <section class="discount-section" aria-label="Special discount offers and testimonials">
         <div class="discount-banner">
             <h2 class="discount-title">Special Discount</h2>
-            <img src="../images/Discount/clock.png" alt="" srcset="">
+            <img src="../images/Discount/clock.png" alt="Limited time offer clock">
         </div>
 
-        <!-- Shades Approved Heading -->
         <h2 class="shades-title">Shades Approved by <br> Thousands</h2>
 
-        <!-- Cards Row -->
         <div class="shades-cards">
             <div class="shade-text-card">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.</p>
+                <p>"The best sunglasses I've ever owned. Perfect comfort and style!" - Sarah M.</p>
             </div>
             <div class="shade-img-card">
-                <img src="../images/Discount/image%201.png" alt="Model 1">
+                <img src="../images/Discount/image%201.png" alt="Customer testimonial - Sarah M.">
             </div>
             <div class="shade-text-card">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.</p>
+                <p>"Outstanding quality and protection. Highly recommend for anyone!" - James T.</p>
             </div>
             <div class="shade-img-card">
-                <img src="../images/Discount/image%202.png" alt="Model 2">
+                <img src="../images/Discount/image%202.png" alt="Customer testimonial - James T.">
             </div>
         </div>
 
@@ -322,26 +292,26 @@
         <h3 class="brands-title">Shop by Brands</h3>
         <div class="brands-grid">
             <div class="brand-card">
-                <img src="../images/brands/chanel.png" alt="Chanel">
+                <img src="../images/brands/chanel.png" alt="Chanel logo">
                 <span>Chanel</span>
             </div>
             <div class="brand-card">
-                <img src="../images/brands/celine.png" alt="Celine">
+                <img src="../images/brands/celine.png" alt="Celine logo">
                 <span>Celine</span>
             </div>
             <div class="brand-card">
-                <img src="../images/brands/gentle_monster.png" alt="Gentle Monster">
+                <img src="../images/brands/gentle_monster.png" alt="Gentle Monster logo">
                 <span>Gentle Monster</span>
             </div>
             <div class="brand-card">
-                <img src="../images/brands/versace.png" alt="Versace">
+                <img src="../images/brands/versace.png" alt="Versace logo">
                 <span>Versace</span>
             </div>
         </div>
-
     </section>
-
 </main>
+
+<!-- Footer -->
 <%@ include file="footer.jsp" %>
 </body>
 </html>

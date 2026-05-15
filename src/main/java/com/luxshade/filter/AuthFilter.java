@@ -28,6 +28,7 @@ public class AuthFilter implements Filter {
                 uri.endsWith("about.jsp") ||
                 uri.endsWith("contact.jsp") ||
                 uri.endsWith("/login") ||
+                uri.endsWith("/logout") ||
                 uri.endsWith("/register") ||
                 uri.endsWith("/contact") ||
                 uri.contains("/css/") ||

@@ -6,6 +6,8 @@ import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.Date;
 
+import java.util.List;
+
 public class UserService {
     private final UserDAO userDAO = new UserDAO();
 
@@ -49,5 +51,10 @@ public class UserService {
     // Delete user
     public boolean deleteUser(int userId) {
         return userDAO.deleteUser(userId);
+    }
+
+    // Get all pending users (for admin dashboard)
+    public List<User> getPendingUsers() {
+        return userDAO.getPendingUsers();
     }
 }

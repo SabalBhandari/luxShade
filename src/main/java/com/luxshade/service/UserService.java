@@ -57,4 +57,10 @@ public class UserService {
     public List<User> getPendingUsers() {
         return userDAO.getPendingUsers();
     }
+    public List<User> getUsersByStatus(String status) {
+        return userDAO.getUsersByStatus(status);
+    }
+    public List<User> getAllUsers() {
+        return userDAO.getAllUsers();
+    }
 }

@@ -9,7 +9,8 @@
 <html>
 <head>
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/contact.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/navbar.css" />
 </head>
 <body>
 <!-- ========== NAVBAR ========== -->

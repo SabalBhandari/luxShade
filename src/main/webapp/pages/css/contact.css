@@ -1,7 +1,7 @@
-/* =============================================
+/*
    LuxShade – contact.css
    Place at: WebContent/pages/css/contact.css
-   ============================================= */
+ */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -24,9 +24,9 @@
     --ease:        0.22s ease;
 }
 
-/* =============================================
+/*
    HERO
-   ============================================= */
+*/
 .lux-hero {
     position: relative;
     width: 100%;
@@ -36,6 +36,100 @@
     align-items: center;
     justify-content: center;
     background: #2a2a2a;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*For Nabbar*/
+body{
+    background: black;
+    overflow-x: hidden;
+}
+nav{
+    padding: 10px 0px;
+}
+.logo a {
+    text-decoration: none;
+    color: #efb504;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover,
+.logo a:focus {
+    color: #ffc933;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #efb504;
+    outline: none;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efb504;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+.nav-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ============================================
+   HAMBURGER MENU (HIDDEN ON DESKTOP)
+   ============================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:first-child {
+    transform-origin: top;
+}
+
+.hamburger span:last-child {
+    transform-origin: bottom;
 }
 
 .lux-hero-bg {
@@ -73,7 +167,7 @@
     background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
+    -moz-background-clip: border;
     -moz-text-fill-color: transparent;
     background-clip: text;
 

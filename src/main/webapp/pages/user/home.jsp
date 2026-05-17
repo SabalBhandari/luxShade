@@ -121,7 +121,7 @@
                 <img src="${pageContext.request.contextPath}/pages/images/Collections/image%201.png" alt="Classic Collection - Featured product">
                 <div class="description">
                     <span class="product-name">Classic Collection</span>
-                    <span class="product-price">From $149.99</span>
+                    <span class="product-price">From Rs1499.99</span>
                     <span class="product-rating">★★★★★</span>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%202.png" alt="Summer Vibes Collection">
                     <div class="description">
                         <span class="product-name">Summer Vibes</span>
-                        <span class="product-price">$159.99</span>
+                        <span class="product-price">Rs1599.99</span>
                         <span class="product-rating">★★★★☆</span>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%203.png" alt="Urban Edge Collection">
                     <div class="description">
                         <span class="product-name">Urban Edge</span>
-                        <span class="product-price">$179.99</span>
+                        <span class="product-price">Rs1799.99</span>
                         <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%204.png" alt="Retro Vibes Collection">
                     <div class="description">
                         <span class="product-name">Retro Vibes</span>
-                        <span class="product-price">$169.99</span>
+                        <span class="product-price">Rs1699.99</span>
                         <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%205.png" alt="Sport Edition Collection">
                     <div class="description">
                         <span class="product-name">Sport Edition</span>
-                        <span class="product-price">$199.99</span>
+                        <span class="product-price">Rs1999.99</span>
                         <span class="product-rating">★★★★☆</span>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%206.png" alt="Luxury Premium Collection">
                     <div class="description">
                         <span class="product-name">Luxury Premium</span>
-                        <span class="product-price">$249.99</span>
+                        <span class="product-price">Rs2499.99</span>
                         <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                     <img src="${pageContext.request.contextPath}/pages/images/Collections/image%207.png" alt="Designer Exclusive Collection">
                     <div class="description">
                         <span class="product-name">Designer Exclusive</span>
-                        <span class="product-price">$299.99</span>
+                        <span class="product-price">Rs2990.99</span>
                         <span class="product-rating">★★★★★</span>
                     </div>
                 </div>
@@ -224,28 +224,28 @@
                 <div class="product-card">
                     <img src="${pageContext.request.contextPath}/pages/images/experience/image%203.png" alt="Polarized Aviator - Black">
                     <p class="product-name">Polarized Aviator | Black</p>
-                    <p class="product-price">$189.99</p>
+                    <p class="product-price">Rs1890.99</p>
                     <p class="product-rating">★★★★★ (145 reviews)</p>
                 </div>
 
                 <div class="product-card">
                     <img src="${pageContext.request.contextPath}/pages/images/experience/image%204.png" alt="UV Shield Classic - Brown">
                     <p class="product-name">UV Shield Classic | Brown</p>
-                    <p class="product-price">$175.99</p>
+                    <p class="product-price">Rs1750.99</p>
                     <p class="product-rating">★★★★★ (98 reviews)</p>
                 </div>
 
                 <div class="product-card">
                     <img src="${pageContext.request.contextPath}/pages/images/experience/image%205.png" alt="Mirrored Lens Pro - Gold">
                     <p class="product-name">Mirrored Lens Pro | Gold</p>
-                    <p class="product-price">$209.99</p>
+                    <p class="product-price">Rs2090.99</p>
                     <p class="product-rating">★★★★★ (167 reviews)</p>
                 </div>
 
                 <div class="product-card">
                     <img src="${pageContext.request.contextPath}/pages/images/experience/image%206.png" alt="Photochromic Smart - Gray">
                     <p class="product-name">Photochromic Smart | Gray</p>
-                    <p class="product-price">$229.99</p>
+                    <p class="product-price">Rs2290.99</p>
                     <p class="product-rating">★★★★★ (203 reviews)</p>
                 </div>
             </div>

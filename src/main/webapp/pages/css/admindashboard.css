@@ -465,3 +465,459 @@ tbody tr:hover {
     color: #007700;
     border: 1px solid #ccffcc;
 }
+
+
+/*Admin Inventory CSS*/
+/* ─── Header Row ─── */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.btn-add {
+    background: #050505;
+    color: #f0c419;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-add:hover {
+    background: #3d3d3d;
+}
+
+/* ─── Product Grid ─── */
+.product-grid-section {
+    margin-top: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ─── Product Card ─── */
+.product-card {
+    background: #f8f4f2;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 14px 16px 8px;
+    flex: 1;
+}
+
+.card-brand {
+    font-size: 11px;
+    color: #f0c419;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-name {
+    font-size: 15px;
+    color: #111;
+    margin: 4px 0;
+    font-weight: 600;
+}
+
+.card-price {
+    font-size: 15px;
+    color: #333;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.card-stock {
+    font-size: 12px;
+    color: #66a39f;
+}
+
+.card-stock.low-stock {
+    color: #e07070;
+    font-weight: bold;
+}
+
+/* ─── Card Actions ─── */
+.card-actions {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px 14px;
+    border-top: 1px solid #ede8e5;
+}
+
+.btn-edit {
+    background: #66a39f;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background: #4e8a86;
+}
+
+.btn-delete {
+    background: #e07070;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    background: #c45555;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    background: #f8f4f2;
+    border-radius: 14px;
+    padding: 60px;
+    text-align: center;
+    color: #aaa;
+    font-size: 15px;
+}
+
+/* ─── Overlay ─── */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* ─── Side Panel ─── */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    height: 100%;
+    background: white;
+    z-index: 200;
+    overflow-y: auto;
+    transition: right 0.35s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #f0f0f0;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    background: #e0e0e0;
+}
+
+.panel-image-container {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #f0ebe8;
+    flex-shrink: 0;
+}
+
+.panel-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.panel-details {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel-brand {
+    font-size: 11px;
+    color: #f0c419;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.panel-name {
+    font-size: 22px;
+    color: #111;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.panel-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background: #f8f4f2;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.panel-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-label {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: #111;
+    font-weight: 600;
+}
+
+.panel-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel-description p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-panel {
+        width: 100%;
+        right: -100%;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*For Edit and Add Product */
+/* ─── Form Layout ─── */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group-full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    transition: 0.3s;
+    background: white;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f0c419;
+    box-shadow: 0 0 0 3px rgba(240, 196, 25, 0.15);
+}
+
+/* ─── Image Upload ─── */
+.image-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-upload-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+.image-upload-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-upload {
+    background: #050505;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.btn-upload:hover {
+    background: #3d3d3d;
+}
+
+.upload-hint {
+    font-size: 12px;
+    color: #999;
+}
+
+/* ─── Form Actions ─── */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #ede8e5;
+}
+
+.btn-submit {
+    background: #050505;
+    color: #f0c419;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #3d3d3d;
+}
+
+.btn-cancel {
+    background: #f8f4f2;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #e0dbd8;
+}
+
+.btn-back {
+    background: #f8f4f2;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background: #e0dbd8;
+}

@@ -16,26 +16,18 @@
 <!-- ========== HERO / ABOUT US ========== -->
 <section class="hero-section">
     <div class="hero-grid">
-
-        <!-- Column 1: Big Title -->
         <div>
             <h1 class="hero-title">ABOUT<br/>US</h1>
         </div>
 
-        <!-- Column 2: Main Feature Image (sunglasses on beach) -->
         <div>
-            <!--
-        Replace the src below with your actual image path.
-        Example: <img src="${pageContext.request.contextPath}/images/hero-shades.jpg" ...>
-      -->
             <img
-                    src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&q=80"
+                    src="images/Glasses/glasses1.jpg"
                     alt="Sunglasses on beach"
                     class="hero-main-img"
             />
         </div>
-
-        <!-- Column 3: Philosophy Card -->
+        
         <div class="hero-side">
             <div class="philosophy-card">
                 <img
@@ -59,25 +51,20 @@
 <section class="vm-section">
     <div class="vm-container">
 
-        <!-- Left: Image of two men with shades -->
         <div class="vm-image">
             <img
-                    src="https://images.unsplash.com/photo-1529408686214-c0b28c788edf?w=600&q=80"
-                    alt="Men wearing LuxShade sunglasses"
+                    src="images/Glasses/model1.jpg"
+                    alt="Model wearing LuxShade sunglasses"
             />
         </div>
 
-        <!-- Right: Scrollable Vision / Mission with thin line + thumb -->
         <div class="vm-content">
-
-            <!-- Vertical scroll-track indicator -->
             <div class="scroll-line-wrapper">
                 <div class="scroll-track">
                     <div class="scroll-thumb"></div>
                 </div>
             </div>
 
-            <!-- Scrollable content -->
             <div class="vm-items">
 
                 <div class="vm-item">
@@ -115,8 +102,6 @@
     <h2 class="section-title">Meet The Amazing Team</h2>
 
     <div class="team-grid">
-
-        <%-- Team Member 1 --%>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-front">
@@ -131,7 +116,7 @@
                             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
                             alt="Sophia Lin"
                     />
-                    <h4>Sophia Lin</h4>
+                    <h4>Telisha Khadgi</h4>
                     <div class="member-role">Creative Director</div>
                     <p>
                         With 12 years in luxury fashion, Sophia drives the aesthetic vision
@@ -146,7 +131,6 @@
             </div>
         </div>
 
-        <%-- Team Member 2 --%>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-front">
@@ -161,7 +145,7 @@
                             src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
                             alt="Marcus Reid"
                     />
-                    <h4>Marcus Reid</h4>
+                    <h4>Sabal Bhandari</h4>
                     <div class="member-role">Head of Operations</div>
                     <p>
                         Marcus oversees global supply chains and ensures every frame reaches
@@ -176,7 +160,6 @@
             </div>
         </div>
 
-        <%-- Team Member 3 --%>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-front">
@@ -191,7 +174,7 @@
                             src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&q=80"
                             alt="Elena Voss"
                     />
-                    <h4>Elena Voss</h4>
+                    <h4>Nirjara Shrestha</h4>
                     <div class="member-role">Lead Designer</div>
                     <p>
                         Elena translates trend forecasting into wearable art, balancing bold
@@ -213,7 +196,6 @@
 <section class="faq-section">
     <div class="faq-container">
 
-        <!-- Left: Label + Heading + Illustration -->
         <div class="faq-left">
             <p class="faq-label">FAQ</p>
             <h2>
@@ -221,12 +203,11 @@
             </h2>
             <img
                     class="faq-img"
-                    src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=300&q=80"
+                    src="images/faq.png"
                     alt="FAQ illustration"
             />
         </div>
 
-        <!-- Right: FAQ items (hover to expand) -->
         <div class="faq-list">
 
             <div class="faq-item">
@@ -274,6 +255,18 @@
                     We accept all major credit/debit cards (Visa, MasterCard), eSewa, Khalti,
                     bank transfers, and cash on delivery for orders within Kathmandu Valley.
                     All online transactions are secured with 256-bit SSL encryption.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are your sunglasses suitable for daily use?
+                    <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely. All LuxShade frames are crafted from lightweight, durable acetate
+                    and titanium alloys. Our lenses provide 100% UV-A and UV-B protection, making
+                    them ideal for everyday wear — from morning commutes to weekend getaways.
                 </div>
             </div>
 

@@ -4,32 +4,63 @@ import com.luxshade.dao.UserDAO;
 import com.luxshade.model.User;
 import org.mindrot.jbcrypt.BCrypt;
 
-public class UserService {
+import java.sql.Date;
 
+import java.util.List;
+
+public class UserService {
     private final UserDAO userDAO = new UserDAO();
 
-    public boolean registerUser(String name, String email, String password, String profilePic) {
+    // Register with all new fields
+    public String registerUser(String name, String email, String password,
+                               String phone, String dob, String address) {
         if (userDAO.emailExists(email)) {
-            return false;
+            return "Email already registered.";
         }
-
+        if (userDAO.phoneExists(phone)) {
+            return "Phone number already registered.";
+        }
         String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
-        User user = new User(name, email, hashedPassword, profilePic);
-        return userDAO.registerUser(user);
+        Date dobDate = null;
+        if (dob != null && !dob.isEmpty()) {
+            dobDate = Date.valueOf(dob); // expects "yyyy-MM-dd" format
+        }
+        User user = new User(name, email, hashedPassword, phone, dobDate, address);
+        boolean success = userDAO.registerUser(user);
+        return success ? "success" : "Registration failed. Please try again.";
     }
 
+    // Login — also checks approval status
     public User loginUser(String email, String password) {
-
         User user = userDAO.getUserByEmail(email);
+        if (user == null) return null;
+        if (!BCrypt.checkpw(password, user.getPassword())) return null;
+        return user; // let the controller check status
+    }
 
-        if (user == null) {
-            return null;
-        }
+    // Admin: approve or reject user
+    public boolean updateUserStatus(int userId, String status) {
+        return userDAO.updateUserStatus(userId, status);
+    }
 
-        if (BCrypt.checkpw(password, user.getPassword())) {
-            return user;
-        }
+    // Update profile
+    public boolean updateUser(User user) {
+        return userDAO.updateUser(user);
+    }
 
-        return null;
+    // Delete user
+    public boolean deleteUser(int userId) {
+        return userDAO.deleteUser(userId);
+    }
+
+    // Get all pending users (for admin dashboard)
+    public List<User> getPendingUsers() {
+        return userDAO.getPendingUsers();
+    }
+    public List<User> getUsersByStatus(String status) {
+        return userDAO.getUsersByStatus(status);
+    }
+    public List<User> getAllUsers() {
+        return userDAO.getAllUsers();
     }
 }

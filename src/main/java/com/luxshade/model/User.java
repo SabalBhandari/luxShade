@@ -1,30 +1,49 @@
 package com.luxshade.model;
 
-public class User {
+import java.sql.Date;
 
+public class User {
     private int userId;
     private String name;
     private String email;
     private String password;
+    private String phone;
+    private Date dob;
+    private String address;
+    private String role;
+    private String status;
     private String profilePic;
 
     public User() {}
 
-    public User(int userId, String name, String email, String password, String profilePic) {
+    // Constructor for registration
+    public User(String name, String email, String password, String phone, Date dob, String address) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.phone = phone;
+        this.dob = dob;
+        this.address = address;
+        this.role = "user";
+        this.status = "pending";
+    }
+
+    // Full constructor
+    public User(int userId, String name, String email, String password, String phone,
+                Date dob, String address, String role, String status, String profilePic) {
         this.userId = userId;
         this.name = name;
         this.email = email;
         this.password = password;
+        this.phone = phone;
+        this.dob = dob;
+        this.address = address;
+        this.role = role;
+        this.status = status;
         this.profilePic = profilePic;
     }
 
-    public User(String name, String email, String password, String profilePic) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.profilePic = profilePic;
-    }
-
+    // Getters and Setters
     public int getUserId() { return userId; }
     public void setUserId(int userId) { this.userId = userId; }
 
@@ -37,16 +56,27 @@ public class User {
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
 
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+
+    public Date getDob() { return dob; }
+    public void setDob(Date dob) { this.dob = dob; }
+
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
+
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
+
     public String getProfilePic() { return profilePic; }
     public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
 
     @Override
     public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", profilePic='" + profilePic + '\'' +
-                '}';
+        return "User{userId=" + userId + ", name='" + name + "', email='" + email +
+                "', role='" + role + "', status='" + status + "'}";
     }
 }

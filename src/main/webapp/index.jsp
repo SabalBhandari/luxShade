@@ -9,7 +9,7 @@
 </h1>
 <br/>
 <ul>
-    <li><a href="pages/user/landing.jsp">home</a></li>
+    <li><a href="pages/user/home.jsp">home</a></li>
     <li><a href="pages/user/login.jsp">Login Page</a></li>
     <li><a href="pages/user/register.jsp">Register Page</a></li>
     <li><a href="pages/user/collections.jsp">collections Page</a></li>

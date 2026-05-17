@@ -24,7 +24,6 @@ public class AuthFilter implements Filter {
         // Public pages — no login required
         boolean isPublic = uri.endsWith("login.jsp") ||
                 uri.endsWith("register.jsp") ||
-                uri.endsWith("landing.jsp") ||
                 uri.endsWith("about.jsp") ||
                 uri.endsWith("contact.jsp") ||
                 uri.endsWith("/login") ||

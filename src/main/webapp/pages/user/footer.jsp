@@ -14,7 +14,7 @@
   <!-- Left Section -->
   <div class="footer-left">
     <h2 class="footer-logo">LuxShade</h2>
-    <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <p class="footer-desc">Discover premium eyewear that blends style, comfort, and quality. Elevate your look with LuxShade.</p>
     <div class="footer-socials">
       <a href="#"><img src="${pageContext.request.contextPath}/pages/images/socials/insta.png" alt="Instagram"></a>
       <a href="#"><img src="${pageContext.request.contextPath}/pages/images/socials/fb.png" alt="Facebook"></a>
@@ -30,11 +30,11 @@
     <ul class="contact-list">
       <li>
         <img src="${pageContext.request.contextPath}/pages/images/icons/phone.png" alt="phone">
-        <span>92472939</span>
+        <span>9876540979</span>
       </li>
       <li>
         <img src="${pageContext.request.contextPath}/pages/images/icons/mail.png" alt="email">
-        <span>asdns@gmail.com</span>
+        <span>luxshade@gmail.com</span>
       </li>
       <li>
         <img src="${pageContext.request.contextPath}/pages/images/icons/location.png" alt="location">

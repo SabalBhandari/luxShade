@@ -1,6 +1,7 @@
 package com.luxshade.model;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class User {
     private int userId;
@@ -13,6 +14,8 @@ public class User {
     private String role;
     private String status;
     private String profilePic;
+
+    private Timestamp createdAt;
 
     public User() {}
 
@@ -73,6 +76,9 @@ public class User {
 
     public String getProfilePic() { return profilePic; }
     public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
+
+    public Timestamp getCreatedAt() { return createdAt; }
+    public void setCreatedAt(Timestamp createdAt) { this.createdAt = createdAt; }
 
     @Override
     public String toString() {

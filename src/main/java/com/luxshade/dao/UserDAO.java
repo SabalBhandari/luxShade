@@ -182,6 +182,19 @@ public class UserDAO {
         user.setRole(rs.getString("role"));
         user.setStatus(rs.getString("status"));
         user.setProfilePic(rs.getString("profile_pic"));
+        user.setCreatedAt(rs.getTimestamp("created_at"));
         return user;
+    }
+    public boolean updateUserPassword(int userId, String hashedPassword) {
+        String sql = "UPDATE users SET password = ? WHERE user_id = ?";
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, hashedPassword);
+            stmt.setInt(2, userId);
+            return stmt.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }

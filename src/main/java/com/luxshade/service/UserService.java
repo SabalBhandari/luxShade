@@ -63,4 +63,13 @@ public class UserService {
     public List<User> getAllUsers() {
         return userDAO.getAllUsers();
     }
+    // Get user by ID
+    public User getUserById(int userId) {
+        return userDAO.getUserById(userId);
+    }
+
+    // Update password
+    public boolean updateUserPassword(int userId, String hashedPassword) {
+        return userDAO.updateUserPassword(userId, hashedPassword);
+    }
 }

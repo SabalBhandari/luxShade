@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f0ec;
+}
+header{
+    background: #000000;
+    padding: 15px 3rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #efb504;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover,
+.logo a:focus {
+    color: #ffc933;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #efb504;
+    outline: none;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efb504;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+.nav-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ============================================
+   HAMBURGER MENU (HIDDEN ON DESKTOP)
+   ============================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:first-child {
+    transform-origin: top;
+}
+
+.hamburger span:last-child {
+    transform-origin: bottom;
+}
+/* ─── Search Main ─── */
+.search-main {
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+/* ─── Search Header ─── */
+.search-header {
+    margin-bottom: 40px;
+}
+
+.search-header h1 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.search-header p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+/* ─── Search Form ─── */
+.search-form {
+    display: flex;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-form input:focus {
+    border-color: #efbf04;
+    box-shadow: 0 0 0 3px rgba(239, 191, 4, 0.15);
+}
+
+.search-form button {
+    background: #111;
+    color: #efbf04;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-form button:hover {
+    background: #333;
+}
+
+/* ─── Results Count ─── */
+.results-count {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* ─── Results Grid ─── */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ─── Result Card ─── */
+.result-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.result-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f0ebe8;
+}
+
+.result-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.result-card:hover .result-image img {
+    transform: scale(1.05);
+}
+
+.result-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.result-brand {
+    font-size: 11px;
+    color: #efbf04;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.result-name {
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.result-sku {
+    font-size: 12px;
+    color: #999;
+}
+
+.result-category {
+    font-size: 12px;
+    color: #888;
+}
+
+.result-price {
+    font-size: 16px;
+    color: #111;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.result-stock {
+    font-size: 12px;
+    color: #66a39f;
+    font-weight: 500;
+}
+
+.result-stock.low-stock {
+    color: #e07070;
+}
+
+/* ─── Result Actions ─── */
+.result-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #f0ebe8;
+}
+
+.btn-cart {
+    flex: 1;
+    background: #111;
+    color: #efbf04;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-cart:hover {
+    background: #333;
+}
+
+.btn-wishlist {
+    flex: 1;
+    background: #f5f0ec;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+}
+
+.btn-wishlist:hover {
+    background: #ede8e4;
+}
+
+/* ─── No Results ─── */
+.no-results {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    border-radius: 16px;
+}
+
+.no-results p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.no-results a {
+    color: #efbf04;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .search-main {
+        padding: 24px;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .search-main {
+        padding: 16px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+}

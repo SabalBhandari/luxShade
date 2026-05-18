@@ -21,7 +21,7 @@
     <div class="lux-hero-content">
         <h1 class="lux-hero-title">Get In Touch</h1>
         <p class="lux-hero-subtitle">We'd love to hear from you!</p>
-        <img src="../images/Shades%20Picture.png">
+        <img src="${pageContext.request.contextPath}/pages/images/Shades%20Picture.png">
     </div>
 </section>
 

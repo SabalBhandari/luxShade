@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f0ec;
+}
+
+header{
+    background: #000000;
+    padding: 15px 3rem;
+}
+.logo a {
+    text-decoration: none;
+    color: #efb504;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover,
+.logo a:focus {
+    color: #ffc933;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #efb504;
+    outline: none;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efb504;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+.nav-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ============================================
+   HAMBURGER MENU (HIDDEN ON DESKTOP)
+   ============================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:first-child {
+    transform-origin: top;
+}
+
+.hamburger span:last-child {
+    transform-origin: bottom;
+}
+
+/* ─── Main ─── */
+.collections-main {
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+/* ─── Header ─── */
+.collections-header {
+    margin-bottom: 32px;
+}
+
+.collections-header h1 {
+    font-size: 36px;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.collections-header p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* ─── Filter Bar ─── */
+.filter-bar {
+    background: white;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.filter-bar form {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-group label {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.filter-group select {
+    padding: 9px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background: white;
+    min-width: 160px;
+}
+
+.filter-group select:focus {
+    border-color: #efbf04;
+    box-shadow: 0 0 0 3px rgba(239,191,4,0.15);
+}
+
+.filter-count {
+    margin-left: auto;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.filter-count span {
+    font-size: 13px;
+    color: #888;
+}
+
+.btn-clear {
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-clear:hover {
+    background: #333;
+}
+
+/* ─── Collections Grid ─── */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+/* ─── Collection Card ─── */
+.collection-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* ─── Card Image ─── */
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f0ebe8;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.collection-card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+/* ─── Card Overlay ─── */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.collection-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.overlay-btn {
+    background: white;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.overlay-btn:hover {
+    background: #efbf04;
+    color: #111;
+}
+
+/* ─── Card Body ─── */
+.card-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.card-brand {
+    font-size: 11px;
+    color: #efbf04;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-name {
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+}
+
+.card-category {
+    font-size: 12px;
+    color: #999;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.card-price {
+    font-size: 17px;
+    color: #111;
+    font-weight: 700;
+}
+
+.card-stock {
+    font-size: 12px;
+    color: #66a39f;
+    font-weight: 500;
+}
+
+.card-stock.low-stock {
+    color: #e07070;
+}
+
+/* ─── Add to Cart Button ─── */
+.btn-add-cart {
+    display: block;
+    background: #111;
+    color: #efbf04;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+    background: #333;
+}
+
+.btn-disabled {
+    background: #ccc;
+    color: #888;
+    pointer-events: none;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    text-align: center;
+    padding: 80px;
+    background: white;
+    border-radius: 16px;
+}
+
+.empty-state p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.empty-state a {
+    color: #efbf04;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .collections-main {
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .collections-main {
+        padding: 20px;
+    }
+
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .filter-bar form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .filter-count {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+}

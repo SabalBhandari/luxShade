@@ -50,3 +50,36 @@ nav{
     filter: brightness(0) saturate(100%) invert(78%) sepia(60%) saturate(500%) hue-rotate(5deg);
 }
 
+/* ─── Search ─── */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.search-bar.active {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 220px;
+    font-family: 'Poppins', sans-serif;
+}
+

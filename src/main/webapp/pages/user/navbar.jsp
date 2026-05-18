@@ -25,9 +25,15 @@
         <div class="nav-right">
             <div class="icons">
                 <!-- Search -->
-                <a href="${pageContext.request.contextPath}/search">
-                    <img src="${pageContext.request.contextPath}/pages/images/icons/search.png" alt="search">
-                </a>
+                <div class="search-wrapper">
+                    <img src="${pageContext.request.contextPath}/pages/images/icons/search.png"
+                         alt="search" id="searchIcon" onclick="toggleSearch()">
+                    <form action="${pageContext.request.contextPath}/search"
+                          method="get" class="search-bar" id="searchBar">
+                        <input type="text" name="q" placeholder="Search products..."
+                               id="searchInput"/>
+                    </form>
+                </div>
                 <!-- Profile -->
                 <a href="${pageContext.request.contextPath}/profile">
                     <img src="${pageContext.request.contextPath}/pages/images/icons/user.png" alt="profile">
@@ -46,7 +52,24 @@
 <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('nav-links');
+
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+    });
+
+    function toggleSearch() {
+        const searchBar   = document.getElementById('searchBar');
+        const searchInput = document.getElementById('searchInput');
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+            searchInput.focus();
+        }
+    }
+
+    document.addEventListener('click', function(e) {
+        const wrapper = document.querySelector('.search-wrapper');
+        if (wrapper && !wrapper.contains(e.target)) {
+            document.getElementById('searchBar').classList.remove('active');
+        }
     });
 </script>

@@ -32,7 +32,8 @@ public class AuthFilter implements Filter {
                 uri.endsWith("/contact") ||
                 uri.contains("/css/") ||
                 uri.contains("/images/") ||
-                uri.contains("/js/");
+                uri.contains("/js/") ||
+                uri.endsWith("/collections");
 
         HttpSession session  = httpRequest.getSession(false);
         User loggedInUser    = (session != null) ? (User) session.getAttribute("user") : null;

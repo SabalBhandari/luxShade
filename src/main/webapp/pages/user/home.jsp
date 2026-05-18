@@ -58,7 +58,7 @@
         <div class="top">
             <h2>New Arrivals</h2>
             <div class="see-more btn">
-                <a href="#all-products" title="View all new arrivals">
+                <a href="${pageContext.request.contextPath}/collections">
                     <span>See More</span>
                     <img src="${pageContext.request.contextPath}/pages/images/icons/btn-2.png" alt="">
                 </a>

@@ -4,16 +4,14 @@
 <head>
     <title>About Us</title>
 
-    <link rel="stylesheet" href="../css/About_us.css" />
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/About_us.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/navbar.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/footer.css">
 </head>
 <body>
-<!-- ========== NAVBAR ========== -->
-<%@ include file="navbar.jsp"%>
-
-
-<!-- ========== HERO / ABOUT US ========== -->
+<header>
+    <%@ include file="navbar.jsp"%>
+</header>
 <section class="hero-section">
     <div class="hero-grid">
         <div>
@@ -22,7 +20,7 @@
 
         <div>
             <img
-                    src="images/Glasses/glasses1.jpg"
+                    src="${pageContext.request.contextPath}/pages/images/Glasses/glasses1.jpg"
                     alt="Sunglasses on beach"
                     class="hero-main-img"
             />
@@ -53,7 +51,7 @@
 
         <div class="vm-image">
             <img
-                    src="images/Glasses/model1.jpg"
+                    src="${pageContext.request.contextPath}/pages/images/Glasses/model1.jpg"
                     alt="Model wearing LuxShade sunglasses"
             />
         </div>
@@ -203,7 +201,7 @@
             </h2>
             <img
                     class="faq-img"
-                    src="images/faq.png"
+                    src="${pageContext.request.contextPath}/pages/images/faq.png"
                     alt="FAQ illustration"
             />
         </div>

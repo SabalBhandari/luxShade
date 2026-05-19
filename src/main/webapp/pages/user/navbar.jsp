@@ -38,6 +38,10 @@
                 <a href="${pageContext.request.contextPath}/profile">
                     <img src="${pageContext.request.contextPath}/pages/images/icons/user.png" alt="profile">
                 </a>
+                <!-- Wishlist -->
+                <a href="${pageContext.request.contextPath}/wishlist">
+                    <img src="${pageContext.request.contextPath}/pages/images/icons/wishlist.png" alt="wishlist">
+                </a>
                 <!-- Cart -->
                 <a href="${pageContext.request.contextPath}/cart">
                     <img src="${pageContext.request.contextPath}/pages/images/icons/cart.png" alt="cart">

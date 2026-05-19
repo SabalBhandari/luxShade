@@ -16,10 +16,10 @@
             <div class="logo"><span class="yellow">Lux</span>Shade</div>
             <nav class="menu">
                 <a href="${pageContext.request.contextPath}/admin/dashboard" class="active">Dashboard</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/OrderManagement.jsp">Orders</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/Inventory.jsp">Inventory</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/Report.jsp">Reports</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/Users.jsp">Users</a>
+                <a href="${pageContext.request.contextPath}/admin/orders">Orders</a>
+                <a href="${pageContext.request.contextPath}/admin/inventory">Inventory</a>
+                <a href="${pageContext.request.contextPath}/admin/reports">Reports</a>
+                <a href="${pageContext.request.contextPath}/admin/users">Users</a>
             </nav>
         </div>
 

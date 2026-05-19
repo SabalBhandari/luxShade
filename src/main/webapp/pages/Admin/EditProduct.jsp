@@ -25,10 +25,10 @@
             <div class="logo"><span class="yellow">Lux</span>Shade</div>
             <nav class="menu">
                 <a href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a>
-                <a href="${pageContext.request.contextPath}/admin/users">Users</a>
-                <a href="${pageContext.request.contextPath}/admin/inventory" class="active">Inventory</a>
                 <a href="${pageContext.request.contextPath}/admin/orders">Orders</a>
+                <a href="${pageContext.request.contextPath}/admin/inventory" class="active">Inventory</a>
                 <a href="${pageContext.request.contextPath}/admin/reports">Reports</a>
+                <a href="${pageContext.request.contextPath}/admin/users">Users</a>
             </nav>
         </div>
         <div class="bottom-section">

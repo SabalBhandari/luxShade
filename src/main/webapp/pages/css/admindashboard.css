@@ -921,3 +921,119 @@ tbody tr:hover {
 .btn-back:hover {
     background: #e0dbd8;
 }
+
+/* For OrderManagement.jsp*/
+/* ─── Admin Order Card ─── */
+.admin-order-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 1px solid #ede8e5;
+}
+
+.admin-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #050505;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-order-id {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f0c419;
+    display: block;
+}
+
+.admin-order-date {
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+}
+
+.admin-order-header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.admin-order-user {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.admin-order-total {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.admin-order-items {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-order-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0ebe8;
+}
+
+.admin-order-item:last-child {
+    border-bottom: none;
+}
+
+.admin-order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #f0ebe8;
+}
+
+.admin-order-item .item-name {
+    font-size: 14px;
+    color: #111;
+    font-weight: 600;
+    display: block;
+}
+
+.admin-order-item .item-qty {
+    font-size: 12px;
+    color: #888;
+    display: block;
+}
+
+.admin-order-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-top: 1px solid #f0ebe8;
+    background: #faf7f5;
+}
+
+.status-select {
+    padding: 7px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.status-select:focus {
+    border-color: #f0c419;
+}

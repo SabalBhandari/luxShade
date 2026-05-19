@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: #000000;
+    padding: 15px 3rem;
+}
+.logo a {
+    text-decoration: none;
+    color: #efb504;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover,
+.logo a:focus {
+    color: #ffc933;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #efb504;
+    outline: none;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efb504;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:focus::after {
+    width: 100%;
+}
+
+.nav-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ============================================
+   HAMBURGER MENU (HIDDEN ON DESKTOP)
+   ============================================ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:first-child {
+    transform-origin: top;
+}
+
+.hamburger span:last-child {
+    transform-origin: bottom;
+}
+
+body {
+    background: #f5f0ec;
+}
+
+/* ─── Main ─── */
+.orders-main {
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+.orders-title {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+/* ─── Messages ─── */
+.msg {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.success-msg {
+    background: #f0fff4;
+    color: #007700;
+    border: 1px solid #ccffcc;
+}
+
+.error-msg {
+    background: #fff0f0;
+    color: #cc0000;
+    border: 1px solid #ffcccc;
+}
+
+/* ─── Empty Orders ─── */
+.empty-orders {
+    text-align: center;
+    padding: 80px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.empty-orders h2 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.empty-orders p {
+    color: #888;
+    margin-bottom: 24px;
+}
+
+.btn-shop {
+    background: #111;
+    color: #efbf04;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-shop:hover {
+    background: #333;
+}
+
+/* ─── Orders List ─── */
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ─── Order Card ─── */
+.order-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* ─── Order Header ─── */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: #111;
+    color: white;
+}
+
+.order-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-id {
+    font-size: 16px;
+    font-weight: 700;
+    color: #efbf04;
+}
+
+.order-date {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.order-header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.order-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/* ─── Status Badge ─── */
+.order-status {
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background: #fff8e1;
+    color: #f0a500;
+}
+
+.status-confirmed {
+    background: #e6f4f1;
+    color: #66a39f;
+}
+
+.status-shipped {
+    background: #e8f4ff;
+    color: #4a90d9;
+}
+
+.status-delivered {
+    background: #f0fff4;
+    color: #007700;
+}
+
+.status-cancelled {
+    background: #fdecea;
+    color: #e07070;
+}
+
+/* ─── Order Items ─── */
+.order-items {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0ebe8;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #f0ebe8;
+}
+
+.order-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item-brand {
+    font-size: 11px;
+    color: #efbf04;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-name {
+    font-size: 14px;
+    color: #111;
+    font-weight: 600;
+}
+
+.item-qty {
+    font-size: 12px;
+    color: #888;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #111;
+    font-weight: 700;
+}
+
+/* ─── Order Footer ─── */
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #f0ebe8;
+    background: #faf7f5;
+}
+
+.order-items-count {
+    font-size: 13px;
+    color: #888;
+}
+
+.btn-cancel {
+    background: #fdecea;
+    color: #e07070;
+    border: 1px solid #e07070;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-cancel:hover {
+    background: #e07070;
+    color: white;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .orders-main {
+        padding: 20px;
+    }
+
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .order-header-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orders-main {
+        padding: 16px;
+    }
+
+    .order-item img {
+        width: 45px;
+        height: 45px;
+    }
+}

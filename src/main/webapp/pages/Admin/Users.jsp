@@ -25,9 +25,9 @@
             <div class="logo"><span class="yellow">Lux</span>Shade</div>
             <nav class="menu">
                 <a href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/OrderManagement.jsp">Orders</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/Inventory.jsp">Inventory</a>
-                <a href="${pageContext.request.contextPath}/pages/Admin/Report.jsp">Reports</a>
+                <a href="${pageContext.request.contextPath}/admin/orders">Orders</a>
+                <a href="${pageContext.request.contextPath}/admin/inventory">Inventory</a>
+                <a href="${pageContext.request.contextPath}/admin/report">Reports</a>
                 <a href="${pageContext.request.contextPath}/admin/users" class="active">Users</a>
             </nav>
         </div>

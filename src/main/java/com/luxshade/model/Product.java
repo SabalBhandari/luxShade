@@ -15,9 +15,14 @@ public class Product {
     private String image;
     private Timestamp createdAt;
 
+
     // Extra fields from JOIN queries
     private String categoryName;
     private String brandName;
+
+    private int totalSold;
+
+
 
     public Product() {}
 
@@ -69,6 +74,10 @@ public class Product {
 
     public String getBrandName() { return brandName; }
     public void setBrandName(String brandName) { this.brandName = brandName; }
+
+
+    public int getTotalSold() { return totalSold; }
+    public void setTotalSold(int totalSold) { this.totalSold = totalSold; }
 
     @Override
     public String toString() {

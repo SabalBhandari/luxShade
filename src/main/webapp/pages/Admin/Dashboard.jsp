@@ -1,9 +1,9 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>DashBoard</title>
+    <title>Dashboard - LuxShade Admin</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/pages/css/admindashboard.css">
 </head>
 <body>
@@ -22,7 +22,6 @@
                 <a href="${pageContext.request.contextPath}/admin/users">Users</a>
             </nav>
         </div>
-
         <div class="bottom-section">
             <div class="admin">
                 <div class="icon-placeholder">
@@ -49,24 +48,24 @@
         <!-- Cards -->
         <section class="cards">
             <div class="card">
-                <h3>Total Sales</h3>
-                <h2>Rs 92,530</h2>
-                <p>This month</p>
+                <h3>Total Revenue</h3>
+                <h2>Rs ${totalRevenue}</h2>
+                <p>All time</p>
             </div>
             <div class="card">
-                <h3>Orders</h3>
-                <h2>2,530</h2>
-                <p>This month</p>
-            </div>
-            <div class="card">
-                <h3>Returning Customers</h3>
-                <h2>1,240</h2>
-                <p>This month</p>
+                <h3>Total Orders</h3>
+                <h2>${totalOrders}</h2>
+                <p>All time</p>
             </div>
             <div class="card">
                 <h3>Deliveries</h3>
-                <h2>630</h2>
-                <p>This month</p>
+                <h2>${totalDeliveries}</h2>
+                <p>Completed</p>
+            </div>
+            <div class="card">
+                <h3>Avg Daily Sales</h3>
+                <h2>Rs ${avgDailySales}</h2>
+                <p>Last 7 days</p>
             </div>
         </section>
 
@@ -74,17 +73,39 @@
         <section class="middle-section">
             <div class="chart-container">
                 <h3>Average Daily Sales</h3>
-                <div class="chart-placeholder"></div>
+                <canvas id="salesChart"></canvas>
             </div>
             <div class="top-selling">
                 <h3>Top Selling Items</h3>
                 <div class="items">
-                    <div class="item-image"></div>
-                    <div class="item-image"></div>
-                    <div class="item-image"></div>
+                    <c:choose>
+                        <c:when test="${empty topProducts}">
+                            <p style="color:#aaa; font-size:13px;">
+                                No sales data yet.
+                            </p>
+                        </c:when>
+                        <c:otherwise>
+                            <c:forEach var="product" items="${topProducts}">
+                                <div class="item-row">
+                                    <div class="item-image">
+                                        <img src="${pageContext.request.contextPath}/${product.image}"
+                                             alt="${product.name}"
+                                             onerror="this.src='${pageContext.request.contextPath}/pages/images/default-product.png'"/>
+                                    </div>
+                                    <div class="item-info">
+                                        <span>${product.name}</span>
+                                        <small>${product.brandName} |
+                                                ${product.totalSold} sold</small>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
                 <div class="see-more">
-                    <span>See More</span>
+                    <a href="${pageContext.request.contextPath}/admin/reports">
+                        See More
+                    </a>
                 </div>
             </div>
         </section>
@@ -144,6 +165,42 @@
 
     </main>
 </div>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+    const labels = [];
+    const data   = [];
+
+    <c:forEach var="entry" items="${dailySales}">
+    labels.push('${entry.key}');
+    data.push(${entry.value});
+    </c:forEach>
+
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Daily Revenue (Rs)',
+                data: data,
+                backgroundColor: 'rgba(240, 196, 25, 0.7)',
+                borderColor: '#f0c419',
+                borderWidth: 2,
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true, grid: { color: '#f0ebe8' } },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+</script>
 
 </body>
 </html>

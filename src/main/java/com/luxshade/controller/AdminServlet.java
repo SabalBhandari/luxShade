@@ -35,10 +35,15 @@ public class AdminServlet extends HttpServlet {
 
         if (uri.endsWith("/admin/dashboard")) {
             List<User> pendingUsers = userService.getPendingUsers();
-            request.setAttribute("pendingUsers", pendingUsers);
+            request.setAttribute("pendingUsers",     pendingUsers);
+            request.setAttribute("totalRevenue",     orderService.getTotalRevenue());
+            request.setAttribute("totalOrders",      orderService.getTotalOrders());
+            request.setAttribute("totalDeliveries",  orderService.getTotalDeliveries());
+            request.setAttribute("topProducts",      orderService.getTopSellingProducts(3));
+            request.setAttribute("avgDailySales",    orderService.getAverageDailySales());
+            request.setAttribute("dailySales", orderService.getDailySalesLast7Days());
             request.getRequestDispatcher("/pages/Admin/Dashboard.jsp")
                     .forward(request, response);
-
         } else if (uri.endsWith("/admin/users")) {
             String status      = request.getParameter("status");
             List<User> allUsers;
@@ -99,6 +104,7 @@ public class AdminServlet extends HttpServlet {
             request.getRequestDispatcher("/pages/Admin/Report.jsp")
                     .forward(request, response);
         }
+
     }
 
     @Override

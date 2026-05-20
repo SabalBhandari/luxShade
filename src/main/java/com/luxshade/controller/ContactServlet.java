@@ -1,3 +1,5 @@
+package com.luxshade.controller;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -6,9 +8,23 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/ContactServlet")
+@WebServlet("/contact")
 public class ContactServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+
+    // LOAD PAGE
+    @Override
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response)
+            throws ServletException, IOException {
+
+        request.getRequestDispatcher("/pages/user/contact.jsp")
+                .forward(request, response);
+    }
+
+    // HANDLE FORM SUBMISSION
+    @Override
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response)
             throws ServletException, IOException {
 
         String firstName = request.getParameter("firstName");
@@ -16,9 +32,12 @@ public class ContactServlet extends HttpServlet {
         String email     = request.getParameter("email");
         String message   = request.getParameter("message");
 
-        // validate, save to DB, send email, etc.
+        request.setAttribute(
+                "successMsg",
+                "Thank you " + firstName + "! We'll be in touch."
+        );
 
-        request.setAttribute("successMsg", "Thank you " + firstName + "! We'll be in touch.");
-        request.getRequestDispatcher("/pages/user/contact.jsp").forward(request, response);
+        request.getRequestDispatcher("/pages/user/contact.jsp")
+                .forward(request, response);
     }
 }

@@ -18,9 +18,9 @@
         </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="${pageContext.request.contextPath}/home">Home</a></li>
-            <li><a href="${pageContext.request.contextPath}/pages/user/collections.jsp">Collection</a></li>
-            <li><a href="${pageContext.request.contextPath}/pages/user/aboutUs.jsp">About</a></li>
-            <li><a href="${pageContext.request.contextPath}/pages/user/contact.jsp">Contact</a></li>
+            <li><a href="${pageContext.request.contextPath}/collections">Collection</a></li>
+            <li><a href="${pageContext.request.contextPath}/aboutus">About</a></li>
+            <li><a href="${pageContext.request.contextPath}/contact">Contact</a></li>
         </ul>
         <div class="nav-right">
             <div class="icons">

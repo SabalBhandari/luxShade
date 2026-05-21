@@ -64,7 +64,7 @@ public class AuthFilter implements Filter {
         // Block regular users from accessing admin pages
         if ((uri.contains("/admin/") || uri.contains("/Admin/")) &&
                 !"admin".equals(loggedInUser.getRole())) {
-            httpResponse.sendRedirect(ctx + "/pages/error/403.jsp");
+            httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN);
             return;
         }
 

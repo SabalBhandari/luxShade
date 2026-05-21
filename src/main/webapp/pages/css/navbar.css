@@ -1,14 +1,53 @@
-nav .container{
+nav {
+    width: 100%;
+    position: relative;
+}
+
+nav .container {
     display: flex;
     justify-content: space-between;
-    /*border: 2px solid red;*/
+    align-items: center;
     width: 100%;
-
 }
-nav{
-    /*border: 2px solid red;*/
-    width: 100%;
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex !important;
+    }
+
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0f0f0f;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        z-index: 99;
+        list-style: none;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
 }
 
 .nav-username {
@@ -33,6 +72,12 @@ nav{
     color: #000;
 }
 
+.nav-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .nav-right .icons a {
     display: flex;
     align-items: center;
@@ -42,12 +87,12 @@ nav{
     width: 22px;
     height: 22px;
     object-fit: contain;
-    /*filter: brightness(0) invert(1);*/
     transition: 0.3s;
 }
 
 .nav-right .icons img:hover {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(60%) saturate(500%) hue-rotate(5deg);
+    filter: brightness(0) saturate(100%) invert(78%) sepia(60%)
+    saturate(500%) hue-rotate(5deg);
 }
 
 /* ─── Search ─── */
@@ -83,3 +128,48 @@ nav{
     font-family: 'Poppins', sans-serif;
 }
 
+/* ─── Mobile ─── */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0f0f0f;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        z-index: 99;
+        list-style: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    .nav-right .icons {
+        gap: 0.8rem;
+    }
+
+    .nav-username {
+        display: none;
+    }
+
+    .nav-logout {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+}

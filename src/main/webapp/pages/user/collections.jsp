@@ -142,6 +142,5 @@
 <footer>
     <%@ include file="footer.jsp" %>
 </footer>
-
 </body>
 </html>

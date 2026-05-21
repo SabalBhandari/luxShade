@@ -65,7 +65,34 @@ header .container {
     list-style-type: none;
     gap: 2rem;
 }
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 0 1.5rem;
+    }
 
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0f0f0f;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        z-index: 99;
+        list-style: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
 .nav-links li a {
     color: white;
     text-decoration: none;
